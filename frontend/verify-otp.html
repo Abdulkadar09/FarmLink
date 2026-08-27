@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FarmLink - Verify OTP</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Verify Your Email</h2>
+  <p style="text-align:center; font-size:13px; color:#555;">
+    We've sent a 6-digit code to <span id="emailDisplay">your email</span>
+  </p>
+
+  <form id="otpForm">
+    <label>Enter OTP</label>
+    <input type="text" id="otp_code" maxlength="6" required>
+
+    <button type="submit">Verify</button>
+  </form>
+
+  <div id="message" class="message"></div>
+
+  <div class="link">
+    Didn't get the code? <a href="#" id="resendLink">Resend OTP</a>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/verify-otp.js"></script>
+</body>
+</html>

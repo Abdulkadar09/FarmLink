@@ -1,0 +1,12 @@
+# Dependencies - these are huge and auto-installable via npm install, no need to upload
+node_modules/
+
+# Environment variables - contains your MySQL password and email credentials, NEVER commit this
+.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
